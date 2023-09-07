@@ -1,4 +1,4 @@
-# MERN_Profile_Creation
+# MERN_Login_App
 Key features and functionality of a MERN login app typically include:
 
 **User Registration:** Users can create accounts by providing their email/username and password. Passwords are securely hashed before being stored in the database.
