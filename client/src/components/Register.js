@@ -15,21 +15,19 @@ export default function Register() {
 
   const formik = useFormik({
     initialValues : {
-      email: 'admin123@gmail.com',
-      username: 'example123',
-      password : 'admin@123'
+      email: '',
     },
     validate : registerValidation,
     validateOnBlur: false,
     validateOnChange: false,
     onSubmit : async values => {
-      values =  Object.assign(values, { profile : file || ''})
+      values = await Object.assign(values, { profile : file || ''})
       let registerPromise = registerUser(values)
       toast.promise(registerPromise, {
         loading: 'Creating...',
         success : <b>Register Successfully...!</b>,
         error : <b>Could not Register.</b>
-      })
+      });
 
       registerPromise.then(function(){ navigate('/')});
     }
@@ -49,12 +47,7 @@ const onUpload = async e =>{
       <div className="flex justify-center items-center h-screen">
         <div className={styles.glass} style={{ width:"40%", paddingTop:'3em'}}>
 
-          <div className="title flex flex-col items-center">
-            <h4 className="text-4xl font-bold text-blue-800">Register</h4>
-            <span className="py-4 text-xl w-2/3 text-center text-gray-800">
-              Happy to join you!
-            </span>
-          </div>
+          
 
           <form className='py-1' onSubmit={formik.handleSubmit}>
             <div className="profile flex justify-center py-4">
@@ -63,17 +56,17 @@ const onUpload = async e =>{
               </label>
               <input onChange={onUpload} type="file" id='profile' name="profile"/>
             </div>
-
             <div className="textbox flex flex-col items-center gap-6">
-              <input {...formik.getFieldProps('email')} className={styles.textbox} type="text" placeholder='Email*'/>
-              <input {...formik.getFieldProps('username')} className={styles.textbox} type="text" placeholder='Username*'/>
-              <input {...formik.getFieldProps('password')} className={styles.textbox} type="text" placeholder='Password*'/>
-              <button className={styles.btn} type="submit">Register</button>
+              <input className={styles.textbox3} type="text" placeholder='Did you forget password?'/>
+            </div>
+            <div className="textbox flex flex-col items-center gap-6">
+              <input {...formik.getFieldProps('email')} className={styles.textbox1} type="text" placeholder='Email*'/>
+              <button className={styles.btn} type="submit">Request reset link</button>
             </div>
 
             <div className="text-center py-4">
-              <span className="text-gray-1200">
-                Already Register? <Link className='text-red-500' to="/">Login Now</Link>
+              <span>
+                 <Link className='text-gray-500' to="/">Back to log in</Link>
               </span>
             </div>
           </form>

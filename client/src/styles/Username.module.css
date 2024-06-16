@@ -1,37 +1,872 @@
-.glass{
-    background: rgba (255, 255, 255, 0.55);
-    border-radius: 16px;
-    box-shadow: 0 4px 30px #4747470b;
-    backdrop-filter: blur(7.1px);
-    border: 1px solid rgba(255, 255, 255, 0.3);
-    @apply border-4 border-gray-50 shrink-0 h-3/4 w-[30%] rounded-3xl py-20 px-7 min-w-max;
+/* .glass */
+.glass {
+  background: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 30px rgba(71, 71, 71, 0.11);
+  backdrop-filter: blur(7.1px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  /* Removed invalid @apply */
+  border-width: 1px;
+  border-color: #0094f7;
+  /* Removed invalid @apply */
+  flex-shrink: 0;
+  height: 802px;
+  width: 660px;
+  max-width: none; /* Replaced min-w-max with max-width */
+
+  top: 147px;
+  left: 103px;
 }
 
-.profile_img{
-    @apply border-4 border-gray-100 w-[110px] rounded-full shadow-lg cursor-pointer;
-    @apply hover:border-gray-500;
+.glass1 {
+  background: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 30px rgba(71, 71, 71, 0.11);
+  backdrop-filter: blur(7.1px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  /* Removed invalid @apply */
+  border-width: 1px;
+  border-color: #0094f7;
+  height: 503px;
+  width: 939px;
+  top: 147px;
+  left: 103px;
+  text-align: center;
 }
 
-.textbox{
-    @apply border-0 px-3 py-2 rounded-xl w-3/4 shadow-sm text-lg;
-    @apply focus:outline-none;
+.glass2 {
+  background: #F4F4F4;
+  box-shadow: 0 4px 30px rgba(71, 71, 71, 0.11);
+  backdrop-filter: blur(7.1px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  /* Removed invalid @apply */
+  border-width: 1px;
+  border-color: #0094f7;
+  height: 920px;
+  width: 353px;
+  top: 104px;
+  text-align: center;
 }
 
-.btn{
-    @apply border bg-indigo-500 w-3/4 py-4 rounded-lg text-gray-50 text-xl shadow-sm text-center;
+.glass3 {
+  background: #FFFFFF;
+  box-shadow: 0 4px 30px rgba(71, 71, 71, 0.11);
+  backdrop-filter: blur(7.1px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-width: 1px;
+  border-color: #0094f7;
+  height: 890px;
+  width: 1057px;
+  top: 114px;
+  border-radius: 10px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
-.btn:hover{
-    background-color: #f7b500;
+/* .profile_img */
+.profile_img {
+  border-width: none;
+  width: 238px;
+  height: 124px;
+  top: 241px;
+  left: 314px;
+  cursor: pointer;
 }
 
-.link{
-    color: rgb(13, 0, 64);
+.group_img {
+  border-width: none;
+  width: 296px;
+  height: 46px;
+  top: -2202px;
+  left: -216px;
+ 
 }
-.link:hover{
-    color: rgb(148, 0, 0);
+.nav {
+  
+  width: 1440px;
+  height: 104px;
+  background-color: #662671;
+  
+}
+.profile_img:hover {
+  border-color: #888;
+}
+/* Group 2609118 */
+.logout{
+
+width: 45px;
+height: 45px;
+left: 1365px;
+top: 30px;
 }
 
-input[type='file']{
-    display: none;
+/* .textbox */
+.textbox {
+  border: 1px;
+  width: 369px; /* Replaced w-3/4 with a numeric value */
+  height: 36px;
+  top: 365px;
+  left: 249px;
+  font-size: 1.25rem; /* Replaced text-lg with a numeric value */
+  outline: none; /* Replaced focus:outline-none with outline */
+  color: #868686;
+}
+
+.textbox1 {
+  border: 1px;
+  padding: 0.75rem; /* Replaced px-3 and py-2 with a numeric value */
+  width: 530px; /* Replaced w-3/4 with a numeric value */
+  height: 74px;
+  box-shadow: 0 2px 4px #9F9F9F;
+  font-size: 1.25rem; /* Replaced text-lg with a numeric value */
+  outline: none; /* Replaced focus:outline-none with outline */
+  margin-top: 25px;
+  margin-bottom: 5px;
+}
+
+.textbox2 {
+  border: 1px;
+  padding: 0.75rem; /* Replaced px-3 and py-2 with a numeric value */
+  width: 530px; /* Replaced w-3/4 with a numeric value */
+  height: 74px;
+  top: 571px;
+  left: 156px;
+  box-shadow: 0 2px 4px #9F9F9F;
+  font-size: 1.25rem; /* Replaced text-lg with a numeric value */
+  outline: none; /* Replaced focus:outline-none with outline */
+  margin-top: 45px;
+  margin-bottom: 5px;
+}
+.textbox3 {
+  width: 410px; /* Replaced w-3/4 with a numeric value */
+  height: 48px;
+  top: -3160px;
+  left: 1588px;
+  line-height: 48px;
+  font-size: 32px;  
+  font-weight: 500;
+  line-height: 48px;
+  color: #5C218B;
+  text-align: center;
+  
+}
+
+.textbox4 {
+  border: 1px;
+  padding: 0.75rem; /* Replaced px-3 and py-2 with a numeric value */
+  width: 840px; /* Replaced w-3/4 with a numeric value */
+  height: 36px;
+  top: -3093px;
+  left: 1373px;
+  line-height: 36px;
+  font-size: 24px;  
+  color: #5C218B;
+ 
+}
+
+/* .btn */
+.btn {
+  border: none;
+  background-color: #5c218b; /* Replaced bg-indigo-500 with a color code */
+  width: 530px;
+  height: 58px;
+  top: 804px;
+  left: 156px;
+  border-radius: 10px; /* Replaced rounded-lg with a numeric value */
+  color: #fff; /* Replaced text-gray-50 with a color code */
+  font-size: 1.5rem; /* Replaced text-xl with a numeric value */
+  text-align: center;
+  margin-top: 100px;
+}
+
+.btn:hover {
+  background-color: #f7b500;
+}
+
+/* .link */
+.link {
+  color: #5c218b; /* Replaced rgb(13, 0, 64) with a color code */
+  width: 176px;
+  height: 30px;
+  top: 662px;
+  left: 510px;
+  font-size: 20px;
+}
+
+.link:hover {
+  color: #940000; /* Replaced rgb(148, 0, 0) with a color code */
+}
+
+/* input[type='file'] */
+input[type="file"] {
+  display: none;
+}
+
+
+
+.flexContainer {
+  display: flex;
+  gap: 10px;
+}
+
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  margin: 10px 0;
+}
+
+a {
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+  font-size: 18px;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Username.module.css */
+
+/* Username.module.css */
+
+/* Username.module.css */
+
+.link {
+  display: inline-block;
+  margin: 5px;
+  color: #000000;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  transition: all 0.3s ease;
+  width: 353px;
+  
+}
+
+.link:hover {
+  background-color: #F4EDAF;
+  color: #000000; /* Change text color to white on hover */
+  border-radius: 5px; /* Rectangle shape on hover */
+}
+
+
+.link .play-button {
+  margin-left: 10px;
+  font-size: 18px;
+  color: black;
+  transition: color 0.3s ease;
+  top: 162px;
+  left: 344px;
+
+}
+
+.link:hover .play-button {
+  color: white;
+}
+
+.fixed {
+  position: fixed;
+}
+
+.inset-0 {
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.bg-gray-600 {
+  background-color: rgba(75, 85, 99, 1);
+}
+
+.bg-opacity-50 {
+  opacity: 0.5;
+}
+
+.flex {
+  display: flex;
+}
+
+.items-center {
+  align-items: center;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.bg-white {
+  background-color: rgba(255, 255, 255, 1);
+}
+
+.p-4 {
+  padding: 1rem;
+}
+
+.rounded {
+  border-radius: 0.25rem;
+}
+
+.shadow-lg {
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
+
+.text-lg {
+  font-size: 1.125rem;
+}
+
+.font-bold {
+  font-weight: 700;
+}
+
+.mb-4 {
+  margin-bottom: 1rem;
+}
+
+.justify-end {
+  justify-content: flex-end;
+}
+
+.space-x-4 {
+  margin-right: 1rem;
+}
+
+.px-4 {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.py-2 {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+.bg-gray-300 {
+  background-color: rgba(209, 213, 219, 1);
+}
+
+.bg-red-500 {
+  background-color: rgba(239, 68, 68, 1);
+}
+
+.text-white {
+  color: rgba(255, 255, 255, 1);
+}
+
+.inset-0 {
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.bg-gray-600 {
+  background-color: rgba(75, 85, 99, 1);
+}
+
+.bg-opacity-50 {
+  opacity: 0.5;
+}
+
+.flex {
+  display: flex;
+}
+
+.items-center {
+  align-items: center;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.bg-white {
+  background-color: rgba(255, 255, 255, 1);
+}
+
+.p-4 {
+  padding: 1rem;
+}
+
+.rounded {
+  border-radius: 0.25rem;
+}
+
+.shadow-lg {
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
+
+.text-lg {
+  font-size: 1.125rem;
+}
+
+.font-bold {
+  font-weight: 700;
+}
+
+.mb-4 {
+  margin-bottom: 1rem;
+}
+
+.justify-end {
+  justify-content: flex-end;
+}
+
+.space-x-4 {
+  margin-right: 1rem;
+}
+
+.px-4 {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.py-2 {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+.bg-gray-300 {
+  background-color: rgba(209, 213, 219, 1);
+}
+
+.bg-red-500 {
+  background-color: rgba(239, 68, 68, 1);
+}
+
+.text-white {
+  color: rgba(255, 255, 255, 1);
+}
+
+.roleManagement {
+  width: 100%;
+}
+
+.searchBarContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.searchBar {
+  padding: 10px;
+  width: 200px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.addButton {
+  padding: 10px 20px;
+  margin-left: 20px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.addButton:hover {
+  background-color: #45a049;
+}
+
+.roleTable {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.roleTable th, .roleTable td {
+  border: 1px solid
+}
+
+
+.editButton, .deleteButton {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+.editButton {
+  color: gray;
+}
+
+.deleteButton {
+  color: gray;
+}
+
+.editButton:hover, .deleteButton:hover {
+  opacity: 0.7;
+}
+
+
+.bg-gray-600 {
+  background-color: rgba(75, 85, 99, 1);
+}
+
+.bg-opacity-50 {
+  opacity: 0.5;
+}
+
+.flex {
+  display: flex;
+}
+
+.items-center {
+  align-items: center;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.bg-white {
+  background-color: rgba(255, 255, 255, 1);
+}
+
+.p-4 {
+  padding: 1rem;
+}
+
+.rounded {
+  border-radius: 0.25rem;
+}
+
+.shadow-lg {
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
+
+.text-lg {
+  font-size: 1.125rem;
+}
+
+.font-bold {
+  font-weight: 700;
+}
+
+.mb-4 {
+  margin-bottom: 1rem;
+}
+
+.justify-end {
+  justify-content: flex-end;
+}
+
+.space-x-4 {
+  margin-right: 1rem;
+}
+
+.px-4 {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.py-2 {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+.bg-gray-300 {
+  background-color: rgba(209, 213, 219, 1);
+}
+
+.bg-red-500 {
+  background-color: rgba(239, 68, 68, 1);
+}
+
+.text-white {
+  color: rgba(255, 255, 255, 1);
+}
+
+.roleManagement {
+  width: 100%;
+}
+
+.searchBarContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.searchBar {
+  padding: 10px;
+  width: 200px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.addButton {
+  padding: 10px 20px;
+  margin-left: 20px;
+  background-color:#4CAF50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.addButton:hover {
+  background-color: #45a049;
+}
+
+.roleList {
+  width: 100%;
+}
+
+.roleListHeader, .roleListItem {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  margin: 5px 0;
+  background-color: #f0f0f0;
+  border-radius: 5px;
+}
+
+.roleListHeader {
+  font-weight: bold;
+  background-color: #e0e0e0;
+}
+
+.roleListItem span {
+  flex: 1;
+  text-align: center;
+}
+
+.activeStatus {
+  color: green;}
+
+.inactiveStatus {
+  color: red;
+}
+
+.editButton, .deleteButton {
+  background: none;
+  border: none;
+  cursor: pointer;
+  margin: 0 5px;
+}
+
+.editButton:hover {
+  color: blue;
+}
+
+.deleteButton:hover {
+  color: red;
+}
+
+.roleListHeader, .roleListItem {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+.roleListHeader span, .roleListItem span {
+  flex: 1;
+  text-align: center;
+}
+
+.searchWrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.searchBar {
+  width: 100%;
+  padding-left: 30px; /* Adjust the padding to make space for the icon */
+}
+
+.searchIcon {
+  position: absolute;
+  left: 10px; /* Adjust this value to position the icon */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.searchWrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+   /* Adjust as needed for spacing */
+  flex: 0.75;
+}
+
+.searchBar {
+  width: 100%;
+  padding-left: 30px; /* Adjust the padding to make space for the icon */
+}
+
+.searchIcon {
+  position: absolute;
+  left: 10px; /* Adjust this value to position the icon */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  pointer-events: none; /* Make the icon unclickable */
+}
+
+.searchBarContainer {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px; /* Adjust as needed for spacing */
+}
+
+.rolesText {
+  margin-right: 10px; /* Adjust as needed for spacing */
+  font-weight: bold;
+}
+
+.addButton {
+  /* Add styles for the Add Role button */
+}
+
+.roleListHeader, .roleListItem {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+.roleListHeader span, .roleListItem span {
+  flex: 1;
+  text-align: center;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.flexContainer {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+
+
+
+.link {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  color: #000;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+.playButton {
+  font-size: 16px;
+}
+
+.userManagement {
+  width: 100%;
+}
+
+.searchBarContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.usersText {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.searchWrapper {
+  position: relative;
+  flex-grow: 1;
+  margin: 0 20px;
+}
+
+.searchBar {
+  width: 100%;
+  padding: 10px;
+  border-radius: 20px;
+  border: 1px solid #ccc;
+  padding-left: 40px; /* Add space for search icon */
+}
+
+.searchIcon {
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  align-items: center;
+}
+
+.addButton {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.addButton:hover {
+  background-color: #0056b3;
+}
+
+.userList {
+  width: 100%;
+}
+
+.userListHeader,
+.userListItem {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background-color: #f8f9fa;
+  margin-bottom: 10px;
+  border-radius: 5px;
+}
+
+.userListHeader {
+  font-weight: bold;
+  background-color: #007bff;
+  color: #fff;
+}
+
+.userListItem span {
+  flex: 1;
+  text-align: center;
+}
+
+.editButton,
+.deleteButton {
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #007bff;
+  margin: 0 5px;
+}
+
+.editButton:hover {
+  color: #0056b3;
+}
+
+.deleteButton:hover {
+  color: #d9534f;
+}
+
+.activeStatus {
+  color: green;
+}
+
+.inactiveStatus {
+  color: red;
 }
